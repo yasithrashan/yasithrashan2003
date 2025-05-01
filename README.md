@@ -4,7 +4,6 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/yxsiya)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://www.yasithrashan.online/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yasith.20222071@iit.ac.lk)
-![Profile Views](https://komarev.com/ghpvc/?username=yasithrashan2003&style=for-the-badge&color=0e75b6)
 
 ## About Me
 
