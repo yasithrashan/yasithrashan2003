@@ -40,17 +40,17 @@ I'm a Computer Science student at the University of Westminster, specializing in
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yasithrashan2003&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yasithrashan2003&layout=compact&theme=tokyonight" alt="Most Used Languages" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=yasithrashan&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yasithrashan&layout=compact&theme=tokyonight" alt="Most Used Languages" height="170" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yasithrashan2003&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yasithrashan&theme=tokyonight" alt="GitHub Streak" />
 </div>
 
 ## 🏆 GitHub Trophies
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=yasithrashan2003&theme=nord&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=yasithrashan&theme=nord&column=7" alt="GitHub Trophies" />
 </div>
 
 ---
