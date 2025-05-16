@@ -99,6 +99,8 @@ I'm a Computer Science student at the University of Westminster, specializing in
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=yasithrashan&repo=your-repo-2&theme=tokyonight" />
 </a>
 
+<!-- Note: Replace "your-repo-1" and "your-repo-2" with the names of your actual repositories -->
+
 ## 🐍 Contribution Snake
 
 <picture>
@@ -106,6 +108,73 @@ I'm a Computer Science student at the University of Westminster, specializing in
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yasithrashan/yasithrashan/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/yasithrashan/yasithrashan/output/github-contribution-grid-snake.svg">
 </picture>
+
+### ⚙️ Snake Animation Setup
+To get the snake animation working properly, create a file at `.github/workflows/snake.yml` with this updated content:
+
+```yaml
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
+name: Generate Snake
+
+# Controls when the action will run
+on:
+  # Run automatically every 24 hours
+  schedule:
+    - cron: "0 0 * * *"
+  
+  # Run workflow manually (without waiting for the cron to be called), through the GitHub Actions Workflow page directly
+  workflow_dispatch:
+
+# The sequence of runs in this workflow:
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks repo under $GITHUB_WORKSHOP, so your job can access it
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      # Generates the snake
+      - name: Generate the snake files
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          # Your GitHub username
+          github_user_name: yasithrashan
+          # These outputs generate the files on a branch called "output"
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+        env:
+          # GitHub access token with repo scope
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Show build status to help with debugging
+      - name: Show build status
+        run: git status
+
+      # Push the changes
+      - name: Push changes to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          # The branch name where the generated content will be pushed
+          target_branch: output
+          # The directory where the snake files are generated
+          build_dir: dist
+          commit_message: Update snake animation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+**Important Notes:**
+1. Make sure to enable GitHub Actions workflows in your repository settings
+2. In the repository settings, under Actions > General, ensure "Read and write permissions" is selected under Workflow permissions
+3. The first run may need to be triggered manually via the Actions tab in your repository
 
 ---
 
