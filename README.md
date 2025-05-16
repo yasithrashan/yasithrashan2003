@@ -99,8 +99,6 @@ I'm a Computer Science student at the University of Westminster, specializing in
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=yasithrashan&repo=your-repo-2&theme=tokyonight" />
 </a>
 
-<!-- Note: Replace "your-repo-1" and "your-repo-2" with the names of your actual repositories -->
-
 ## 🐍 Contribution Snake
 
 <picture>
@@ -108,37 +106,6 @@ I'm a Computer Science student at the University of Westminster, specializing in
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yasithrashan/yasithrashan/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/yasithrashan/yasithrashan/output/github-contribution-grid-snake.svg">
 </picture>
-
-### ⚙️ Snake Animation Setup
-To get the snake animation working, create a file at `.github/workflows/snake.yml` with this content:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: Platane/snk@master
-        id: snake-gif
-        with:
-          github_user_name: yasithrashan
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          svg_out_path_dark: dist/github-contribution-grid-snake-dark.svg
-
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
 
 ---
 
